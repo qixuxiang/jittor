@@ -1,3 +1,4 @@
+
 # Jittor: 即时编译深度学习框架
 
 
@@ -7,7 +8,7 @@
 Jittor 是一个基于即时编译和元算子的高性能深度学习框架，整个框架在即时编译的同时，还集成了强大的Op编译器和调优器，为您的模型生成定制化的高性能代码。
 
 
-Jittor前端语言为Python。前端使用了模块化的设计，这是目前最主流的深度学习框架接口设计。后端则使用高性能语言编写，如CUDA，C++。
+Jittor前端语言是Python。前端使用了模块化的设计，这是目前最主流的深度学习框架接口设计。后端则使用高性能语言编写，如CUDA，C++。
 
 
 下面的代码演示了如何一步一步使用Python代码，从头对一个双层神经网络建模。
@@ -67,7 +68,7 @@ for i,(x,y) in enumerate(get_data(n)):
 ## 快速开始
 
 
-我们提供了一些jupyterr notebooks来帮助您快速入门Jittor。
+我们提供了一些jupyter notebooks来帮助您快速入门Jittor。
 
 - [示例：模型定义与训练][1]
 - [基础：Op, Var][2]
@@ -76,7 +77,7 @@ for i,(x,y) in enumerate(get_data(n)):
 
 ## 安装
 
-我们提供了Docker安装方式，免去您配置环境，Docker安装方法如下：
+我们提供了Docker安装方式，免去您配置环境的过程，Docker安装方法如下：
 
 
 ```
@@ -89,7 +90,7 @@ docker run -it --network host jittor/jittor-cuda
 关于Docker安装的详细教程，可以参考[Windows/Mac/Linux通过Docker安装计图](https://cg.cs.tsinghua.edu.cn/jittor/tutorial/2020-5-15-00-00-docker/)
 
 
-Jittor使用Python和C++编写。 它需要用于即时编译的编译器。当前，我们支持三种编译器：
+Jittor使用Python和C++编写，它需要用于即时编译的编译器。当前，我们支持三种编译器：
 
 * CPU 编译器 （需要下列至少一个）
     - g++ （>=5.4.0）
@@ -109,12 +110,12 @@ Jittor的环境要求如下:
 
 
 
-Jittor 一共提供三种方式安装: pip安装, 一键脚本安装 和 手动安装.
+Jittor 目前共提供三种方式安装: pip安装, 一键脚本安装 和 手动安装。
 
 ## Pip 安装
 
 
-如果您没有准备好环境，欢迎使用我们提供的一键安装脚本， 如果您已经装好编译器和对应版本的Python,我们强烈推荐您使用这种方法
+如果您没有准备好环境，欢迎使用我们提供的一键安装脚本； 如果您已经装好编译器和对应版本的Python,我们强烈推荐您使用下面这种方法
 (如果无法访问github, 可以通过jittor主页下载):
 
 ```bash
@@ -124,11 +125,11 @@ python3.7 -m jittor.test.test_example
 ```
 
 如果测试运行通过,恭喜你已经安装完成.
-jittor会自动在路径中寻找合适的编译器, 如果您希望手动指定编译器, 请使用环境变量 `cc_path` 和 `nvcc_path`(可选).
+jittor会自动在路径中寻找合适的编译器, 如果您希望手动指定编译器, 请使用环境变量 `cc_path` 和 `nvcc_path`(可选)。
 
 ## 一键脚本安装
 
-一键脚本安装会帮您安装好所需的编译器以及对应的Python版本.
+一键脚本安装会帮您安装好所需的编译器以及对应的Python版本。
 
 
 我们提供能快速安装最新版本Jittor的单行命令（Ubuntu> = 16.04）：
@@ -170,7 +171,7 @@ bash /tmp/llvm.sh 8
 ### 步骤二：安装Python和python-dev
 
 
-Jittor需要python的版本>=3.7。
+安装Jittor需要Python版本>=3.7。
 
 ```bash
 sudo apt install python3.7 python3.7-dev
@@ -180,7 +181,7 @@ sudo apt install python3.7 python3.7-dev
 ### 步骤三：运行Jittor
 
 
-整个框架是及时编译的。 让我们通过pip安装jittor
+整个框架是计时编译的，让我们通过pip安装jittor
 
 ```bash
 git clone https://github.com/Jittor/jittor.git
@@ -194,7 +195,7 @@ export cc_path="clang++-8"
 python3.7 -m jittor.test.test_example
 ```
 
-如果通过了测试，那么您的Jittor已经准备就绪。
+如果通过了测试，恭喜您的Jittor已经准备就绪。
 
 
 ### 可选步骤四：启用CUDA
