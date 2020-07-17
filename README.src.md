@@ -140,7 +140,7 @@ Note: Currently Jittor runs on the Windows operating system through WSL. For the
 
 Jittor offers three ways to install: pip, script or manual.
 
-Jittor 一共提供三种方式安装: pip安装, 一键脚本安装 和 手动安装.
+Jittor 一共提供三种方式安装: pip安装, 一键脚本安装 和 手动安装。
 
 ## Pip 安装
 
@@ -223,7 +223,7 @@ sudo apt install python3.7 python3.7-dev
 
 The whole framework is compiled Just-in-time. Let's install jittor via pip
 
-整个框架是及时编译的。 让我们通过pip安装jittor
+整个框架是即时编译的。 让我们通过pip安装jittor
 
 ```bash
 git clone https://github.com/Jittor/jittor.git
